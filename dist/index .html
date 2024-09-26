@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="w-full h-14 fixed bg-transparent flex justify-between md:mt-10 px-5 lg:px-[50px] items-center md:px-4">
+    </a><div class=""></a><img src="nefa logo.svg" class="cursor-pointer" alt=""></div>
+
+    <ul class="bg-blue-100 lg:bg-transparent lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute w-full left-0 
+    lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex 
+    lg:flex-row flex-col lg:gap-4 justify-start  lg:mr-44">
+
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#home"> Cryptocurrency</a>
+        </li>
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#project"> Exchanges</a>
+        </li>
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#education"> Watchlist</a>
+        </li>
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#contact"> NFT</a>
+        </li>
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#footer"> Portfolio</a>
+        </li>
+        <li
+            class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+            <a href="#footer"> Products</a>
+        </li>
+
+        <div class="lg:hidden mt-8 lg:mt-0 space-x-4">
+            <button
+                class="bg-transparent text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                Login
+            </button>
+            <button
+                class="bg-transparent text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                SignUp
+            </button>
+        </div>
+
+
+    </ul>
+
+    <div class="lg:hidden">
+        <a href="#" name="menu" onclick="Menu(this)" class="text-4xl">&#8801;</a>
+    </div>
+    <div class="lg:block hidden   space-x-4">
+        <button
+            class="bg-transparent text-blue-500 border border-blue-500 px-6 py-2 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+            Login
+        </button>
+        <button
+            class=" text-white bg-blue-500 border border-blue-500 px-6 py-2 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+            SignUp
+        </button>
+    </div>
+</nav>
+
+<!-- Home section -->
+<section class="w-full h-screen bg-sky-100 px-7 md:px-[65px] " id="home">
+    <div class="flex flex-col lg:flex-row   ">
+        <div class="left mt-40 ">
+            <div class="text-center md:text-left">
+                <h2 class="uppercase text-blue-600 font-medium mb-3">Sign Up Today</h2>
+                <h1 class="font-bold mb-8 text-[40px] md:text-[70px] text-center md:text-left md:leading-[70px]">
+                    The World's
+                    <span class="text-blue-500"> Fastest Growing</span> Crypto Web App
+                </h1>
+                
+                <p class="text-slate-800 text-[20px] mb-5 hidden md:block">Buy and sell 200+ cryptocurrencies with 20+ flat
+                    currencies using
+                    bank transfers or your
+                    credit/debit card.
+                </p>
+            </div>
+
+
+            <div
+                class="space-x-4 mb-8 space-y-4 md:space-y-0 flex flex-col md:flex-row justify-center md:justify-start mr-5 ">
+                <button
+                    class="text-white bg-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                    Get Started
+                </button>
+                <button
+                    class="bg-transparent  text-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                    Download App
+                </button>
+            </div>
+
+
+        </div>
+        <div class="flex flex-col justify-center mr-16">
+            <img class="hidden lg:block mt-10" src="/images/star.a8c53d6.png" alt="">
+        </div>
+
+        <div class="flex flex-col mr-12">
+            <img class="hidden lg:block mt-44" src="/images/ellipse-2.4f6027c.png" alt="">
+        </div>
+
+
+        
+    </div>
+</section>
+
+
+</body>
+
+<script>
+    function Menu(e) {
+        let list = document.querySelector('ul');
+
+        // Toggle the menu open/close
+        if (e.name === 'menu') {
+            e.name = "close";
+            list.classList.add('top-[55px]', 'opacity-100');  // Menu becomes visible
+            list.classList.remove('top-[-400px]', 'opacity-0'); // Remove hidden state
+        } else {
+            e.name = "menu";
+            list.classList.add('top-[-400px]', 'opacity-0');  // Menu becomes hidden
+            list.classList.remove('top-[55px]', 'opacity-100'); // Remove visible state
+        }
+    }
+
+
+
+
+</script>
+</html>
